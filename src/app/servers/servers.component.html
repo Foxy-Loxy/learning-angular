@@ -1,2 +1,3 @@
-<app-server></app-server>
-<app-server></app-server>
+<input type="text" [(ngModel)]="serverName">
+<button (click)="addServer()">Add</button>
+<app-server *ngFor="let server of serversName; let i = index"></app-server>
